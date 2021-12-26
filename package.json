@@ -4,9 +4,8 @@
   "description": "RestAPI with Express and TypeScript",
   "main": "app.js",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "tsc -p .",
+    "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
+    "debug": "SET DEBUG=* && npm run start",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
   },
