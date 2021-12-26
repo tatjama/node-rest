@@ -39,6 +39,10 @@ Inside every folder we are going to have some or all of modules
  - Models - for defining data models matching a given database schema, to facilitate data storage and retrieval
  - Controllers - for separating the route configuration from the code that finally (after any middleware) processes a route request, calls the above service functions if necessary, and gives a response to the client.
 
+Concepts:
+    1. DAO - Data access object
+    2. DTO - Data transfer object
+
 ## Build with 
     1. Node.js
     2. Express
@@ -47,6 +51,7 @@ Inside every folder we are going to have some or all of modules
     5. CORS - Without this, our API would only be usable from front ends being served from the exact same subdomain as our back end.
     6. debug - Avoid using console.log
     7. Winston - is responsible for logging requests to our API and the responses (and errors) returned.
+    8. Shortid - create id's for temporary memory database 
 ## Author
 - Website - [Tatjana Markovic](https://my-react-portfolio-tatjana.vercel.app/)
 - LinkedIn - [Tatjana Marković](https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/)
