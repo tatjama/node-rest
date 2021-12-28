@@ -20,7 +20,10 @@
     http://localhost:5000
 5. start ESlint with
     npm run lint
-
+6. start Docker with
+    docker-compose up -d
+    end Docker with
+    docker-compose down -d
 ## Overview
     REST api 
 
@@ -52,7 +55,9 @@ Concepts:
     6. debug - Avoid using console.log
     7. Winston - is responsible for logging requests to our API and the responses (and errors) returned.
     8. Shortid - create id's for temporary memory database 
-    9. Aegon2 - library for securely hashing the user password:
+    9. Argon2 - library for securely hashing the user password:
+    10. Docker - container for MongoDB
+    11. Mongoose - ODM ( object data model ) library for communicating with MongoDB
 ## Author
 - Website - [Tatjana Markovic](https://my-react-portfolio-tatjana.vercel.app/)
 - LinkedIn - [Tatjana Marković](https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/)
