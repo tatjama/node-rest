@@ -57,7 +57,7 @@ Concepts:
     8. Shortid - create id's for temporary memory database 
     9. Argon2 - library for securely hashing the user password:
     10. Docker - container for MongoDB
-    11. Mongoose - ODM ( object data model ) library for communicating with MongoDB
+    11. Mongoose 5.13.14 - npm install mongoose@5 - ODM ( object data model ) library for communicating with MongoDB, version >5 broke code
 ## Author
 - Website - [Tatjana Markovic](https://my-react-portfolio-tatjana.vercel.app/)
 - LinkedIn - [Tatjana Marković](https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/)
