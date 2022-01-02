@@ -23,7 +23,7 @@
 6. start Docker with
     docker-compose up -d
     end Docker with
-    docker-compose down -d
+    docker-compose down
 ## Overview
     REST api 
 
@@ -58,6 +58,8 @@ Concepts:
     9. Argon2 - library for securely hashing the user password:
     10. Docker - container for MongoDB
     11. Mongoose 5.13.14 - npm install mongoose@5 - ODM ( object data model ) library for communicating with MongoDB, version >5 broke code
+    12. Express-validator - validate users input
+    
 ## Author
 - Website - [Tatjana Markovic](https://my-react-portfolio-tatjana.vercel.app/)
 - LinkedIn - [Tatjana Marković](https://www.linkedin.com/in/tatjana-markovi%C4%87-919501189/)
