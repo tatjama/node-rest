@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+const dotenvResult = dotenv.config();
+if(dotenvResult.error){
+    throw dotenvResult.error;
+}
 import express from 'express';
 import http from 'http';
 import * as winston from 'winston';
@@ -6,6 +11,7 @@ import { CommonRoutesConfig } from './common/common.routes.config';
 import cors from 'cors';
 import debug from 'debug';
 import { UsersRoutes } from './users/users.routes.config';
+import { AuthRoutes } from './auth/auth.routes.config';
 
 const app: express.Application = express();
 const server: http.Server = http.createServer(app);
@@ -33,6 +39,9 @@ if(!process.env.DEBUG) {
 
 //Initialize the logger
 app.use(expressWinston.logger(loggerOptions));
+
+//Adding Auth Routes to array of routes - independent
+routes.push( new AuthRoutes(app));
 
 //Adding User Routes to array of routes
 routes.push( new UsersRoutes(app));
